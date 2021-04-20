@@ -6,13 +6,18 @@
     <meta name="description" content="{{ description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/static/global.css" />
+    <script type="module" data-id="KbTF8dXGss" src="https://api.jamcart.dev/v1/jamcart.js"></script>
   </head>
   <body>
     <header>
       <p id="site-logo">
         <a href="/">Dress Site</a>
       </p>
-      <p id="open-cart">#OPEN CART#</p>
+      <p id="open-cart">
+        <jamcart-open>
+          My Cart (<jamcart-cart-count></jamcart-cart-count>)
+        </jamcart-open>
+      </p>
     </header>
 
     {{ content | safe }}

@@ -21,7 +21,12 @@ layout: global.liquid
       </label>
     </p>
     <p>
-      #ADD TO CART#
+      <jamcart-add
+        include-form-data
+        image="{{ image }}"
+        name="{{ title }}"
+        price="{{ price }}"
+        url="{{ page.url }}"></jamcart-add>
     </p>
   </form>
 </div>
