@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="{{ description }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/static/global.css" />
+  </head>
+  <body>
+    <header>
+      <p id="site-logo">
+        <a href="/">Dress Site</a>
+      </p>
+      <p id="open-cart">#OPEN CART#</p>
+    </header>
+
+    {{ content | safe }}
+
+    <footer>
+      <p>This is a demo e-commerce site using <a href="https://www.11ty.dev/">11ty</a>, <a href="https://forestry.io/">Forestry</a>, and <a href="https://jamcart.io">JamCart</a></p>
+      <p>Source available on <a href="https://github.com/JamCart/11ty-forestry-netlify">GitHub</a></p>
+      <p>All photos by <a href="https://unsplash.com/@matt909">Alex Shaw</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+    </footer>
+  </body>
+</html>

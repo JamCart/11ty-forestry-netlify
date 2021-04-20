@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/GreatVibes-Regular.woff2) format('woff2');
+}
+
+html {
+  color: #444;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body > header {
+  align-items: center;
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+@media (min-width: 40em) {
+  body > header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    position: sticky;
+    top: 0;
+  }
+}
+body > header p {
+  margin: 0;
+}
+body > footer {
+  border-top: 1px solid #CCC;
+  margin: 5em auto 2em;
+  max-width: 80%;
+  opacity: .8;
+  padding-top: 1em;
+  text-align: center;
+  width: 40em;
+}
+body > footer a {
+  color: inherit;
+}
+body > footer p {
+  margin: .2em 0;
+}
+
+#site-logo {
+  font-family: "Great Vibes", cursive;
+  font-size: 250%;
+}
+#site-logo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.price {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  opacity: .8;
+  margin: 0;
+}
+
+#products {
+  display: grid;
+  grid-gap: 2em 2em;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  margin: 3em 1em;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+#products a {
+  color: inherit;
+  display: block;
+  font-family: arial;
+  font-size: 125%;
+  font-weight: 300;
+  text-decoration: none;
+}
+#products img {
+  display: block;
+  height: auto;
+  margin: 0 auto .5em;
+  max-width: 100%;
+}
+
+#product-view {
+  margin: 3em 1em;
+}
+#product-view h1 {
+  border-bottom: 3px solid currentColor;
+  font-size: 150%;
+  margin: 0 0 .5rem;
+}
+#product-view h2 {
+  margin: 1rem 0 0;
+  font-size: 100%;
+  font-weight: 500;
+}
+#product-view h2 + p {
+  margin-top: 0;
+}
+#product-view img {
+  height: auto;
+  max-width: 100%;
+}
+#product-view label {
+  font-size: 110%;
+  font-weight: 500;
+}
+#product-view select {
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  font: inherit;
+  font-weight: normal;
+}
+@media (min-width: 40em) {
+  #product-view {
+    display: flex;
+    justify-content: center;
+  }
+  #product-view img {
+    margin-right: 1em;
+    max-width: 40vw;
+  }
+  #product-view .body {
+    max-width: 30em;
+  }
+}
