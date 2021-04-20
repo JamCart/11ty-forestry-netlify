@@ -1,0 +1,18 @@
+---
+title: 11ty, Forestry, and Jamcart E-Commerce Demo 
+description: A demonstration of how to easily build an e-commerce website.
+layout: global.liquid
+---
+
+<h1 id="category-title">Dresses</h1>
+<ul id="products">
+  {% for product in collections.product %}
+    <li>
+      <a href="{{ product.url }}">
+        <img alt="" src="{{ product.data.image }}" height="959" width="640" />
+        {{ product.data.title }}
+      </a>
+      <p class="price">{{ product.data.price | money }}</p>
+    </li>
+  {% endfor %}
+</ul>
